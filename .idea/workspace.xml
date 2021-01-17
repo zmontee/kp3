@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3afeb383-3766-42cb-91b5-c2e395509fbe" name="Default Changelist" comment="" />
+    <list default="true" id="3afeb383-3766-42cb-91b5-c2e395509fbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -161,6 +167,7 @@
       <workItem from="1604333808347" duration="7404000" />
       <workItem from="1610905909085" duration="1392000" />
       <workItem from="1610907357691" duration="1063000" />
+      <workItem from="1610909627153" duration="75000" />
     </task>
     <servers />
   </component>
