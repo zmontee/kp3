@@ -1,0 +1,93 @@
+// main: less.style1.less, less.style2.less
+
+.button-styles(@type) {
+  // .main__button--danger
+  &--@{type} {
+    border-color: @@type;
+    &:hover {
+      background: @@type;
+      color: #fff;
+    }
+  }
+
+  &--@{type} when (@type = danger) {
+    border-color: @@type;
+    &:hover {
+      box-shadow: 0 0 10px 0 @@type inset, 0 0 10px 4px @@type;
+    }
+  }
+
+  &--@{type} when (@type = warning) {
+    border-color: @@type;
+    &:hover {
+      background: #332213;
+      border-radius: 50%;
+      transform: rotate(-30deg);
+    }
+  }
+
+  &--@{type} when (@type = primary) {
+    border-color: @@type;
+    &:hover {
+      font-size: 10px;
+      font-style: italic;
+      border-radius: 50%;
+    }
+  }
+
+  &--@{type} when (@type = success) {
+    border-color: @@type;
+    &:before {
+      position: absolute;
+      content:"";
+      border-top: 5px solid lighten(@@type, 5%);
+      border-left: 5px solid lighten(@@type, 5%);
+      border-right: 5px solid darken(@@type, 5%);
+      border-bottom: 5px solid darken(@@type, 5%);
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      transition: 0.5s;
+
+    }
+    &:hover {
+      box-shadow: 7px 7px darken(@@type, 20%), -7px -7px lighten(@@type, 20%);
+      cursor: pointer;
+      &::before {
+        border: 0px ;
+      }
+    }
+  }
+}
+
+.tile-styles(@type) {
+
+  // .main__tile--danger
+  &--@{type} {
+
+    & .main__header,
+    & .main__plus {
+      color: @@type;
+    }
+  }
+
+  &--@{type} when (@type = danger) {
+    background: #252525;
+  }
+
+  &--@{type} when (@type = warning) {
+    background: #141435;
+    opacity: 0.6;
+  }
+
+  &--@{type} when (@type = primary) {
+    background: #ffa74f;
+    opacity: 0.3;
+  }
+
+  &--@{type} when (@type = success) {
+    background: #a0f4f7;
+    opacity: 0.8;
+  }
+}
